@@ -1,9 +1,9 @@
 
-# micrologger - A Lightweight Logger for MicroPython
+# esplog - A Lightweight Logger for MicroPython & ESP Microcontrollers 
 
 ## Overview
 
-`micrologger` is a lightweight logging system designed for MicroPython environments. It allows you to log messages at different severity levels, output logs to both the console and a file, and supports log rotation based on file size. The system is flexible and can be configured to use color-coded logs for the console and store logs in either text or JSON format. It is optimized for use on embedded systems and microcontrollers where resources are limited.
+`esplog` is a lightweight logging system designed for MicroPython environments. It allows you to log messages at different severity levels, output logs to both the console and a file, and supports log rotation based on file size. The system is flexible and can be configured to use color-coded logs for the console and store logs in either text or JSON format. It is optimized for use on embedded systems and microcontrollers where resources are limited.
 
 ## Features
 
@@ -15,12 +15,12 @@
 - **Flexible log level management**: You can set the minimum log level dynamically and filter out lower-level messages.
 - **Disable logging**: You can completely disable logging when necessary.
 
-To install **MicroLogger**, you can use `pip`:
+To install **esplog**, you can use `upip`:
 
  for MicroPython, use the appropriate package manager like `upip` to install directly on your microcontroller.
 
 ```bash
-upip install micrologger
+upip install esplog
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ upip install micrologger
 ### Example:
 
 ```python
-from micrologger.core import Logger
+from esplog.core import Logger
 
 # Create a Logger instance with the desired settings
 logger = Logger(
@@ -135,7 +135,7 @@ Example:
 
 ## License
 
-micrologger is licensed under the MIT License. See the LICENSE file for more details.
+esplog is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Test Images
 
