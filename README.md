@@ -1,9 +1,9 @@
 
-# ulogger - A Lightweight Logger for MicroPython
+# micrologger - A Lightweight Logger for MicroPython
 
 ## Overview
 
-`ulogger` is a lightweight logging system designed for MicroPython environments. It allows you to log messages at different severity levels, output logs to both the console and a file, and supports log rotation based on file size. The system is flexible and can be configured to use color-coded logs for the console and store logs in either text or JSON format. It is optimized for use on embedded systems and microcontrollers where resources are limited.
+`micrologger` is a lightweight logging system designed for MicroPython environments. It allows you to log messages at different severity levels, output logs to both the console and a file, and supports log rotation based on file size. The system is flexible and can be configured to use color-coded logs for the console and store logs in either text or JSON format. It is optimized for use on embedded systems and microcontrollers where resources are limited.
 
 ## Features
 
@@ -15,16 +15,20 @@
 - **Flexible log level management**: You can set the minimum log level dynamically and filter out lower-level messages.
 - **Disable logging**: You can completely disable logging when necessary.
 
-## Installation
+To install **MicroLogger**, you can use `pip`:
 
-This module is designed to work with MicroPython, and can be used in any MicroPython project. Simply copy the `Logger` class into your project and use it directly.
+ for MicroPython, use the appropriate package manager like `upip` to install directly on your microcontroller.
+
+```bash
+upip install micrologger
+```
 
 ## Usage
 
 ### Example:
 
 ```python
-from logger import Logger
+from micrologger.core import Logger
 
 # Create a Logger instance with the desired settings
 logger = Logger(
@@ -131,7 +135,7 @@ Example:
 
 ## License
 
-ulogger is licensed under the MIT License. See the LICENSE file for more details.
+micrologger is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Test Images
 

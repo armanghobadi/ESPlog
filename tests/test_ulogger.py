@@ -1,4 +1,4 @@
-from ulogger.core import Logger
+from micrologger.core import Logger
 
 
         
